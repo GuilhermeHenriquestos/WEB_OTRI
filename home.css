@@ -88,21 +88,27 @@ body {
 /* --- Seção de Boas-Vindas (Hero) - ESTILOS OTIMIZADOS --- */
 .hero-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 50px;
-    padding: 100px 40px; /* Aumenta o padding vertical */
-    background-color: var(--background-color);
+    padding: 50px 40px;
+    
+    background-image: linear-gradient(90deg, rgba(7,7,7,0.95) 0%, rgba(7,7,7,0.7) 50%, transparent 100%), url(img_home.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
 }
 
 .hero-content {
     max-width: 600px;
+    width: 50%; 
+    padding: 2% 5%;
 }
 
 .hero-content h2 {
     font-size: 3.5rem; /* Aumentado */
     font-weight: 800; /* Mais pesado */
-    color: var(--text-color); /* Mais contraste */
+    color: #fff; /* Mais contraste */
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -114,7 +120,7 @@ body {
 
 .hero-content p {
     font-size: 1.3rem; /* Aumentado */
-    color: var(--secondary-text-color);
+    color: #d0d0d0;
     margin-bottom: 40px;
     max-width: 550px; 
 }
